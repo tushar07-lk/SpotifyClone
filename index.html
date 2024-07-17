@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - play the Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Sidebar of Spotify web view:- -->
+    <div class="sidebar">
+        <!--Now for the sidebar navigation elements-: -->
+        <div class="sidebar-nav">
+            <div class="logo">
+                <a href="#"><img src="sideLogo.png" alt="image"></a>
+            </div>
+
+            <!--some nav. un-listed elements-: -->
+            <ul>
+                <li><a href="#">
+                    <span><i class="fa-solid fa-house"></i></span>
+                    <span>Home</span>
+                </a></li>
+
+                <!--Now for 'search' bar management-: -->
+                <li><a href="#">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span>Search</span>
+                </a></li>
+            </ul>
+        </div> <!--End of the 1st child BOX-: -->
+
+        <!--Now for the sidebar navigation elements-: -->
+        <div class="sidebar-nav box2">
+
+            <!--some nav. un-listed elements-: -->
+            <ul>
+                <li><a href="#">
+                    <span><i class="fa-solid fa-bookmark"></i></span>
+                    <span class="library">Your Library</span>
+                </a></li>
+
+                <!--A kind of scroll section-: -->
+                <li>
+                    <div class="sidebar-scroll">
+                        <!--We have to make 2 boxes inside of this main box-: -->
+                        <div class="create-playist">
+                            <h4>Create your first playlist</h4>
+                            <p>It's easy, we will help you</p>
+                            <!--A major button in this catagory-: -->
+                            <button>Create playlist</button>
+                        </div>
+                        <!--The second box for manupulating-: -->
+                        <div class="create-playist">
+                            <h4>Let find some podcasts to follow</h4>
+                            <p>We'II keep you updated on new episodes</p>
+                            <!--A major button in this catagory-: -->
+                            <button>Browse podcasts</button>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+
+            <!--Now for add some extra hyper elements-: -->
+            <div class="privacy">
+                <ul>
+                    <!--First row elements-: -->
+                    <li>
+                        <a href="#">Legal</a>
+                        <a href="#">Safety & Privacy Center</a><br>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <!--Second row elements-: -->
+                    <li>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+                    </li> <!--End of the second row elements: -->
+                    <li>
+                        <a href="">Cookies</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--A language button setup for choose-: -->
+            <div class="language-btn">
+                <button>🌐English</button>
+            </div>
+        </div>
+    </div> <!--End of the sidebars-: -->
+
+    <!-- ................................... MAIN SECTION......................-->
+    <div class="main-section">
+       <!--Top navigation section-: -->
+       <div class="top-nav">
+            <!--Now for the top-navigation elements-: -->
+            <div class="prev-btn">
+                <button><i class="fa-solid fa-chevron-left"></i></button>
+                <button><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+
+            <!--Here is for signIn / SignUp btn-: -->
+            <div class="login-btn">
+                <button class="sign-up">Sign Up</button>
+                <button class="sign-in">Log in</button>
+            </div>
+       </div> <!--Now End of the 1st main section-: -->
+         
+       <!--Making a Artists BUmp-Up-: -->
+
+        <!--Main play-list starts-: -->
+        <div class="spotify-playlist">
+            <h2>Popular Album</h2>
+            <!--Now for a card section-: -->
+            <div class="card">
+                <!--First-->
+                <div class="item">
+                    <img src="1720450557514.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>ANIMAL</h4> 
+                    <p>Manan Bharatwaj, Vishal Mishra, Jaani</p>
+                </div>
+
+                <!--Second card-: -->
+                <div class="item">
+                    <img src="1720450557460.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Satranga(From "ANIMAL")</h4>
+                    <p>Arijit Singh, Shreyas Puranik, Ranveer Kapoor</p>
+                </div>
+
+                <!--Third card-: -->
+                <div class="item">
+                    <img src="1720450557474.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Moosetape</h4>
+                    <p>Sidhu Moose Wala</p>
+                </div>
+
+                <!--Fourth Card-: -->
+                <div class="item">
+                    <img src="1720450557488.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Husn</h4>
+                    <p>Anuv Jain</p>
+                </div>
+
+                <!--Fifth Card-: -->
+                <div class="item">
+                    <img src="1720450557501.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Still Rollin</h4>
+                    <p>Shubh</p>
+                </div>
+
+            </div>
+        </div>
+        <!-----2ND ROW STARTS-: ------>
+        <div class="spotify-playlist">
+            <h2>Featured Charts</h2>
+            <!--Now for a card section-: -->
+            <div class="card">
+                <!--First-->
+                <div class="item">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Top - 50 India</h4>
+                    <p>Your daily updates of the most played tracks</p>
+                </div>
+
+                <!--Second card-: -->
+                <div class="item">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Top Songs - India</h4>
+                    <p>Your weekly updates of the most played tracks</p>
+                </div>
+
+                <!--Third card-: -->
+                <div class="item">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_in_default.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Viral 50 - India</h4>
+                    <p>Your daily updates of the most played tracks</p>
+                </div>
+
+                <!--Fourth Card-: -->
+                <div class="item">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Top 50 - Global</h4>
+                    <p>Your daily updates of the most played tracks</p>
+                </div>
+
+                <!--Fifth Card-: -->
+                <div class="item">
+                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Top Songs - Global</h4>
+                    <p>Your weekly updates of the most played tracks</p>
+                </div>
+
+            </div>
+        </div><!-----END OF THE 2ND ROW----->
+        <div class="spotify-playlist">
+            <h2>Spotify Playlist</h2>
+            <!--Now for a card section-: -->
+            <div class="card">
+                <!--First-->
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/70B80Lwx2sxti0M1Ng9e8K/en-GB" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Udit Narayan Radio</h4>
+                    <p>With Kumar Sanu, Alka Yagnik</p>
+                </div>
+
+                <!--Second card-: -->
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>Arijit Singh Radio</h4>
+                    <p>With Neha Kakkar, Pritam, KK & More</p>
+                </div>
+
+                <!--Third card-: -->
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2ae6PxICSOZHvjqiCcgon8/en-GB" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>S.P Balasubrahmanyam</h4>
+                    <p>With Mano, llaiyaraaja, S.janaki and More<</p>
+                </div>
+
+                <!--Fourth Card-: -->
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en-GB" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>A.R Rehman Radio</h4>
+                    <p>With Pritam, KK, & Badshah</p>
+                </div>
+
+                <!--Fifth Card-: -->
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/3m49WVMU4zCkaVEKb8kFW7/en-GB" alt="image">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+                    </div>
+                    <!--Image about-: -->
+                    <h4>llaiyaraaja Radio</h4>
+                    <p>With S.janaki & llaiyaraaja and More</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Now for the Footer section-: -->
+        <div class="footer-section">
+            <div class="footer">
+                <div class="footer-links">
+                    <div class="footer-columb">
+                        <div>Company</div>
+                        <ul class="col-links"> <!--First Columb-: -->
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">For the Record</a></li>
+                        </ul>
+                    </div> <!--End of the 1st footer columb-: -->
+                    <div class="footer-columb">
+                        <div>Communities</div>
+                        <ul class="col-links"> <!--First Columb-: -->
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Vendors</a></li>
+                        </ul>
+                    </div> <!--End of the 2nd footer columb-: -->
+                    <div class="footer-columb">
+                        <div>Useful Links</div>
+                        <ul class="col-links"> <!--First Columb-: -->
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Free Mobile App</a></li>
+                        </ul>
+                    </div> <!--End of the 3rd footer columb-: -->
+
+                </div>
+                <!--Now enter some footer Social media elements inside of the footer section-: -->
+                <div class="social-links">
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </div>
+                </div> <!--End of the footer social links-: -->
+            </div>
+        </div>
+
+        <!--Now for an underline add-: -->
+        <hr>
+        <div>
+            <p class="copyright">&copy; 2024 Spotify AB</p>
+        </div>
+
+    </div>  
+
+    <!--The outer section-: -->
+    <div class="preview">
+        <div class="text">
+            <h4>Preview of Spotify</h4>
+            <p>Sign Up to get Unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <!--Now for the 2 buttons-: -->
+        <div class="button">
+            <button>Sign Up Free</button>
+        </div>
+    </div>
+    <script src="function."></script>
+</body>
+</html>

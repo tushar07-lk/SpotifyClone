@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Background check:- */
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Now for the sidebar management-: */
+.sidebar{
+    width: 300px;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+/*Now for sidebar navigation bar management-: */
+.sidebar-nav{
+    background-color: #111111;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar-nav .logo{
+    width: 120px;
+}
+
+.sidebar-nav .logo img{
+    width: 100%;
+}
+
+/*Now for the list elements management-: */
+.sidebar-nav ul{
+    list-style: none;
+}
+
+/*Now for the list items manage-: */
+.sidebar-nav ul li{
+    padding: 10px 20px;
+}
+
+/*Now for the anchor text / link management-: */
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*Hover effect on those elements-: */
+.sidebar-nav ul li a:hover{
+    color: hsl(0, 3%, 94%);
+    text-shadow: -1px 3px 15px white;
+}
+
+/*Now for the icon management-: */
+.sidebar-nav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*Now for the second section management-: */
+.library::after{
+    content: "+";
+    float: right;
+    text-align: center;
+    background-color: #1f1e1e;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+/*Now for styling the insights elements-: */
+.create-playist{
+    background: #302f2f;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/*Now for the sidebar scroll management-: */
+.sidebar-scroll{
+    height: 120px;
+    overflow-y: auto;
+}
+
+/*Now for styling the scroll bar-: */
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+
+/*At the time of scrollbar mangement-: */
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: transparent;
+}
+
+/*At the time of Hover scroll-bar visibles-: */
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    width: 3px;
+    background: #5c5b5b;
+    border-radius: 5px;
+}
+
+/*Customize the contents under box-: */
+.create-playist h4{
+    color: white;
+    font-size: 15px;
+}
+
+/*Now for the paragraphs management-: */
+.create-playist p{
+    color: white;
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+/*Button management-: */
+.create-playist button{
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/*Now for the footer part customization-: */
+.privacy ul li a{
+    text-decoration: none;
+    color: #575656;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.privacy ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+/*Now for space between each of rows-: */
+.privacy ul li{
+    padding-bottom: 5px;
+}
+
+/*A bit of hover effects-: */
+.privacy ul li a:hover{
+    color: hsl(0, 4%, 80%);
+    text-shadow: -1px 3px 15px white;
+}
+
+/*Now for the total privacy section placements-: */
+.privacy{
+    margin-top: 10px;
+}
+
+/*Now for the language button-: */
+.language-section{
+    padding: 20px 30px;
+}
+
+/*Now button customization-: */
+.language-btn button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    box-shadow: -2x 4px 16px white;
+    outline: none;
+    margin: 10px 0;
+}
+
+/*Now for the hover effects on the language button-: */
+.language-btn button:hover{
+    padding: 11px 21px;
+}
+
+/*Now for the main-section management-: */
+.main-section{
+    margin-left: 300px;
+    background: #181818;
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 80px;
+}
+
+/*A little but webkit scroll bar management-: */
+.main-section::-webkit-scrollbar{
+    background: transparent;
+    }
+
+    /*At the time of scrollbar mangement-: */
+    .main-section::-webkit-scrollbar-thumb{
+        width: 10px;
+        background: transparent;
+    }
+
+    /*At the time of Hover scroll-bar visibles-: */
+    .main-section:hover::-webkit-scrollbar-thumb{
+        width: 10px;
+        background: #5c5b5b;
+        border-radius: 5px;
+    }
+
+/*Top nav. customize-: */
+.main-section .top-nav{
+    padding: 20px 30px;
+    background: #131212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Now for icons management-: */
+.main-section .top-nav button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+/*Now for inside of things-: */
+.main-section .top-nav .prev-btn button i{
+    color: #838181;
+    font-size: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*Hover effects on that arrow section-: */
+.main-section .top-nav .prev-btn i:hover{
+    color: white;
+}
+
+/*now for the signup / sign-in button customize-: */
+.top-nav .login-btn .sign-up{
+    color: #838181;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+/*Now for the hover effect on the sign-Up button-: */
+.top-nav .login-btn .sign-up:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*Now for the log-in button customize-: */
+.top-nav .login-btn .sign-in{
+    color: #838181;
+    font-size: 16px;
+    font-weight: bold;
+    background: #efff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*Hover effect on the buttons-: */
+.top-nav .login-btn .sign-in:hover{
+    background: #f3f3f3;
+    color: black;
+}
+
+/*Now for the 1st playlist customization-: */
+.spotify-playlist{
+    padding: 20px 40px;
+}
+
+/*Heading customization-: */
+.spotify-playlist h2{
+    color: #efff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/*Now for card details-: */
+.spotify-playlist .card{
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+}
+
+/*Now for customize the card items-: */
+.spotify-playlist .card .item{
+    width: 190px;
+    min-width: 140px;
+    background-color: #272626;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/*Now for image customization-: */
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/*Now for the inside content customization-: */
+.spotify-playlist .item h4{
+    color: white;
+}
+
+/*Now for paragrph customize-: */
+.spotify-playlist .item p{
+    color: #8f8e8e;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/*Now for the hover effects while hover on the cards-: */
+.spotify-playlist .card:hover{
+    box-shadow: -3px 6px 15px black;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+/*For each item hover effects-: */
+.spotify-playlist .card .item:hover{
+    box-shadow: -1px 2px 15px white;
+}
+
+/*While hover on <p> underline added-: */
+.spotify-playlist .item p:hover{
+   text-decoration: underline;
+}
+
+/*Now for accessing the playBTN -: */
+.spotify-playlist .play-btn{
+    position: relative;
+}
+
+/*Anchor tag management-: */
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background-color: green;
+    border-radius: 50%;
+    padding: 12px;
+    right: 8px;
+    top: -40px;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+/*While hover over items the photos will make shadow-: */
+.spotify-playlist .card .item img:hover{
+    box-shadow: -1px 3px 15px  #010000;
+}
+
+/*While hover the play-btn will appear-: */
+.spotify-playlist .card .item:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+/*Now customize the footer section-: */
+.footer-section{
+    padding: 20px 40px;
+}
+
+/*Now for inside of the footer section those 2 indv. sections-: */
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/*Now for the footer links-: */
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/*Now for the column-links manage-: */
+.footer-section .footer .footer-links .footer-columb{
+    margin: 0 12px;
+}
+
+/*Now for the Headings of these elements-: */
+.footer-section .footer .footer-links .footer-columb div{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/*Now Customize the '<ul>' elements-: */
+.footer-section .footer .footer-links .footer-columb li{
+    list-style: none;
+    margin: 6px 0;
+}
+
+/*Now for managing the anchor tags-: */
+.footer-section .footer .footer-links .footer-columb a{
+    text-decoration: none;
+    color: #969393;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/*Now for the hover effects on those elements-: */
+.footer-section .footer .footer-links .footer-columb a:hover{
+    color: #f0eded;
+    text-shadow: -1px 3px 15px white;
+    text-decoration: underline;
+}
+
+/*Now for the social media links manage-: */
+.footer .social-links i{
+    color: white;
+    background: #353434;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/*Now for the hover effect on those icons-: */
+.footer .social-links i:hover{
+    background: #636262;
+}
+
+/*Now for the last section 'COPYRIGHT' section manages-: */
+hr{
+    margin: 20px 40px;
+    border: 1px solid #2c2b2b;
+    outline: 0;
+    margin-top: 40px;
+}
+
+/*Now for the paragraph of the copyright-: */
+.copyright{
+    padding: 0 40px;
+    color: #969393;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/*Now for the gradient point-: */
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 40px;
+    border-radius: 7px;
+}
+ 
+/*Now the h4 tag manupulation-: */
+.preview h4{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/*Now the paragraph-: */
+.preview p{
+    font-size: 14px;
+    font-weight: 400;
+    color: whitesmoke;
+    font-family: italic;
+}
+
+/*Now for the button management-: */
+.preview button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
